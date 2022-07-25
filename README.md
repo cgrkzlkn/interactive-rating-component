@@ -31,7 +31,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Frontend Mentor]()
-- Live Site URL: [Interactive Rating Component]()
+- Live Site URL: [Interactive Rating Component](https://cgrkzlkn.github.io/interactive-rating-component/)
 
 ## My process
 
