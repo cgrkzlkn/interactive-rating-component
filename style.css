@@ -1,0 +1,288 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --orange: hsl(25, 97%, 53%);
+    --white: hsl(0, 0%, 100%);
+    --lightgrey: hsl(217, 12%, 63%);
+    --mediumgrey: hsl(216, 12%, 54%);
+    --darkblue: hsl(213, 19%, 18%);
+    --verydarkblue: hsl(216, 12%, 8%);
+    --iconBg: hsl(213, 19%, 21%);
+}
+
+html {
+    font-size: 62.5%;
+}
+
+input {
+    font-family: inherit;
+}
+
+body {
+    min-height: 100vh;
+    font-family: 'Overpass', sans-serif;
+    background-color: var(--verydarkblue);
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.rating-container {
+    background-color: var(--darkblue);
+    width: 100%;
+    max-width: 33rem;
+    border-radius: 2rem;
+}
+
+.rating-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2.75rem;
+    padding-right: 2rem;
+    padding-bottom: 3.5rem;
+}
+
+.rating-form .form-title {
+    margin-bottom: 1.3rem;
+}
+
+.rating-form .form-title h1 {
+    font-size: 2.4rem;
+}
+
+.rating-form .form-icon {
+    background-color: var(--iconBg);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.rating-form .form-icon img {
+    width: 1.4rem;
+}
+
+.rating-form .form-desc {
+    margin-bottom: 3rem;
+}
+
+.rating-form .form-desc p {
+    font-size: 1.4rem;
+    line-height: 1.5;
+    color: var(--lightgrey);
+}
+
+.rating-form .rating input[type="radio"] {
+    display: none;
+}
+
+.rating-form .rating {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2.5rem;
+}
+
+.rating-form .rating label {
+    font-size: 1.2rem;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    color: var(--mediumgrey);
+    background-color: var(--iconBg);
+    border-radius: 50%;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.rating-form .rating label:hover {
+    background-color: var(--orange);
+    color: var(--white);
+}
+
+.rating-form .rating input[type="radio"]:checked+label {
+    background-color: var(--mediumgrey);
+    color: var(--white);
+}
+
+.rating-form .form-submit {
+    width: 100%;
+}
+
+.rating-form .form-submit input[type="submit"] {
+    padding: 1.5rem 2rem;
+    width: 100%;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+    background-color: var(--orange);
+    color: var(--white);
+    border-radius: 2.5rem;
+    letter-spacing: 2px;
+    font-size: 1.3rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.rating-form .form-submit input[type="submit"]:hover {
+    background-color: var(--white);
+    color: var(--orange);
+}
+
+.thanks-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3.5rem 2.5rem;
+    display: none;
+}
+
+.thanks-container .thanks-img {
+    margin-bottom: 2rem;
+
+}
+
+.thanks-container .thanks-img img {
+    width: 15rem;
+}
+
+.thanks-container .thanks-rating {
+    background-color: var(--iconBg);
+    padding: .5rem 1rem;
+    border-radius: 1.5rem;
+    margin-bottom: 2.6rem;
+}
+
+.thanks-container .thanks-rating p {
+    font-size: 1.4rem;
+    color: var(--orange);
+    opacity: .85;
+}
+
+.thanks-container .thanks-title {
+    margin-bottom: 1rem;
+}
+
+
+.thanks-container .thanks-title h2 {
+    font-size: 2.5rem;
+}
+
+.thanks-container .thanks-message p {
+    font-size: 1.4rem;
+    color: var(--lightgrey);
+    text-align: center;
+    line-height: 1.5;
+}
+
+footer {
+    font-size: 1.25rem;
+    text-align: center;
+    padding-top: 2rem;
+}
+
+footer a {
+    color: hsl(228, 47%, 61%);
+}
+
+@media screen and (min-width:768px) {
+    .rating-container {
+        max-width: 41rem;
+        border-radius: 2.5rem;
+    }
+
+    .rating-form {
+        padding: 3rem;
+        padding-right: 4rem;
+        padding-bottom: 3rem;
+    }
+
+    .rating-form .form-icon {
+        margin-bottom: 3.5rem;
+        padding: 1.5rem;
+    }
+
+    .rating-form .form-icon img {
+        width: 1.6rem;
+    }
+
+    .rating-form .form-title {
+        margin-bottom: 1.2rem;
+    }
+
+    .rating-form .form-title h1 {
+        font-size: 2.75rem;
+    }
+
+    .rating-form .form-desc {
+        margin-bottom: 2.75rem;
+    }
+
+    .rating-form .form-desc p {
+        font-size: 1.5rem;
+        line-height: 1.6;
+    }
+
+    .rating-form .rating {
+        margin-bottom: 3rem;
+    }
+
+    .rating-form .rating label {
+        font-size: 1.6rem;
+        padding: 2.5rem;
+    }
+
+    .rating-form .form-submit input[type="submit"] {
+        padding: 1.3rem 2rem;
+        font-size: 1.5rem;
+    }
+
+    .thanks-container {
+        padding: 4.5rem 3.5rem;
+        padding-left: 3.25rem;
+    }
+
+    .thanks-container .thanks-img {
+        margin-bottom: 3rem;
+    }
+
+    .thanks-container .thanks-img img {
+        width: 16rem;
+    }
+
+    .thanks-container .thanks-rating {
+        padding: .75rem 1.75rem;
+        margin-bottom: 3.5rem;
+    }
+
+    .thanks-container .thanks-rating p {
+        font-size: 1.5rem;
+    }
+
+    .thanks-container .thanks-title {
+        margin-bottom: 1.25rem;
+    }
+
+    .thanks-container .thanks-title h2 {
+        font-size: 2.75rem;
+    }
+
+    .thanks-container .thanks-message p {
+        font-size: 1.5rem;
+    }
+
+}
