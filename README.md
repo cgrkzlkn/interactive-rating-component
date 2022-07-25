@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Frontend Mentor]()
+- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/interactive-rating-component-using-flexbox-and-mobilefirst-workflow-FopqyTqfNq)
 - Live Site URL: [Interactive Rating Component](https://cgrkzlkn.github.io/interactive-rating-component/)
 
 ## My process
